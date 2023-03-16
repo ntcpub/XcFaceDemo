@@ -10,6 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            allowInsecureProtocol = true
+            url "http://47.108.228.164:8081/nexus/service/local/repositories/releases/content/"
+        }
     }
 }
 rootProject.name = "XcFaceDemo"
